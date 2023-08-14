@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid css</title>
+</head>
+<style>
+    
+    .child{
+        background-color: rgba(17, 255, 0, 0.809);
+        border: 3px solid rgba(99, 42, 165, 0.701);
+        padding: 30px;
+        font-size: 30px;
+    
+
+    }
+    .parent{
+        /* margin: 0 300px; */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-columns: 200px 500px 300px; */
+        justify-content: space-between;
+        /* grid-template-rows: 1fr 1fr; */
+        column-gap: 0px;
+        row-gap: 40px;
+        text-align: center;
+        }
+</style>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h3>child 1</h3>
+
+        </div>
+         <div class="child">
+            <h3>child 2</h3>
+
+         </div>
+         <div class="child">
+             <h3>child 3</h3>
+         </div>
+
+         
+        
+    </div>
+
+</body>
+</html>

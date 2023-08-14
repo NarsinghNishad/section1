@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        width: 100%;
+        margin: 0;
+        justify-content: space-between;
+        height: 100vh;
+        display: flex;
+        /* background-color: rgba(0, 234, 255, 0.28); */
+    }
+    .header{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        
+    }
+    .headerleft{
+        width: 30%;
+        margin: 10px;
+        height: 100%;
+        display: flex;
+    }
+    
+    .active1{
+        margin: 15px;
+        width: 150px;
+        height: 50px;
+        margin-left: -20px;
+        font-size: large;
+        
+    }
+    .active2{
+        margin: 10px;
+        width: 100px;
+        height: 50px;
+        margin-left:50px;
+        font-size: large;
+    } 
+
+  
+    
+    .pasive1{
+        width: 600px;
+        height: px;
+        text-align: 40px;
+        box-align: left;
+    }
+    .headerright{
+        margin-right: 10px;
+        width: 50px;
+        height: 30px;
+        border: 2px solid green;
+       background-color: chartreuse;
+    }
+    .btn1{
+        width: 200px;
+        height: 50px;
+        margin: 50px;
+        padding-bottom: 0px;
+        position: relative;
+        left: 10px;
+        box-sizing: border-box;
+        border-radius: 15px;
+        text-align: center;
+      
+       
+    }
+    .btn1:hover{
+        background-color: aqua;
+        transform:translate(2px) ;
+    }
+    .btn{
+        width: 300px;
+        margin-top: 15px;
+        border: none;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 5px;
+        rotate: 0deg;
+        height: 40px;
+        left: 5px;
+        text-orientation: sideways;
+    }
+    .btn:hover{
+        background-color: aquamarine;
+        transform: translate(2px);
+    }
+    .headermiddle{
+        border: 2px solid red;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        display: flex;
+    }
+    input{
+        width: 700px;
+        height: 60px;
+        margin: 10px;
+        box-sizing: border-box;
+        border-radius: 30px;
+        rotate: 0deg;
+        height: 60px;position: absolute;
+        right: 300px;
+        text-orientation: sideways;
+        padding-left: 60px;
+        background-color: whitesmoke;
+    }
+    .l1{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+       
+    }
+
+    .l{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 10px;
+        left: 80px;
+       
+    }
+    
+    .l2{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 10px;
+        right: 10px;
+       
+    }
+    
+    .m1{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 25px;
+        left: 380px;
+       
+    }
+    
+    .m2{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 25px;
+        right: 350px;
+       
+    }
+    
+    .r1{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 25px;
+        right: 150px;
+       
+    }
+    
+    .r2{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 25px;
+        right: 100px;
+       
+    }
+    
+    .r3{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 25px;
+        right: 60px;
+       
+    }
+    
+    .r4{
+        width: 30px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 25px;
+        right: 10px;
+       
+    }
+    .m3{
+        width: 15px;
+        height: 15px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 140px;
+        left: 350px;
+       
+    }
+    .m4{
+        width: 15px;
+        height: 15px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 140px;
+        left: 410px;
+       
+    }
+    .m5{
+        width: 15px;
+        height: 15px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 140px;
+        left: 450px;
+       
+    }
+    
+    .m0{
+        width: 15px;
+        height: 15px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 140px;
+        left: 380px;
+    }  
+    
+    .tagb{
+        text-align: center; 
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80vh;
+        padding-left: 400px;
+    }
+    .tag1{
+        
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        padding-bottom: 10px;
+        /* box-sizing: border-box; */
+        border-bottom:  2px solid red;
+        background-color: whitesmoke;
+        text-align: justify;
+        position: absolute;
+        box-sizing: border-box;
+        top: 200px;
+        left: 350px;
+       
+    }
+ 
+    .tag2{
+        
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        padding-bottom: 10px;
+        /* box-sizing: border-box; */
+        border-bottom:  2px solid red;
+        background-color: whitesmoke;
+        text-align: justify;
+        position: absolute;
+        box-sizing: border-box;
+        top: 200px;
+        left: 650px;
+       
+    }
+    .tag3{
+        
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        padding: 10px;
+        font-size: 25px;
+        padding-bottom: 10px;
+        /* box-sizing: border-box; */
+        border-bottom:  2px solid red;
+        background-color: whitesmoke;
+        text-align: justify;
+        position: absolute;
+        box-sizing: border-box;
+        top: 200px;
+        right: 200px;
+       
+    }
+    .mi1{
+        
+        width: 35px;
+        height: 40px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 205px;
+        left: 320px;
+    }
+    .mi2{
+        
+        width: 35px;
+        height: 30px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 210px;
+        left: 615px;
+    }
+    .mi3{
+        
+        width: 35px;
+        height: 35px;
+        text-align: left;
+        /* text-align: justify; */
+        position: absolute;
+        
+        top: 205px;
+        left: 930px;
+    }
+    .maindiv{
+        display: flex;
+         flex-direction: column; 
+        /* center, flex-start, flex-end, space-around, space-between, space-evenly */
+        justify-content: space-between;
+        align-items:center; 
+        /* align-content: space-between; */
+        height: 100vh;
+        margin-top: 250px;
+    }
+    .subdiv1{
+        background-color: blue;
+        border: 2px solid rgba(165, 42, 42, 0.066);
+        padding: ;
+        font-size: 20px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: center;
+        height: 45px;
+    } 
+
+</style>
+    
+    <div class="header">
+
+       <div class="headerleft">
+            <div>
+            <img  class="active2" src="https://cdn-icons-png.flaticon.com/512/7216/7216128.png" alt="">
+           <img  class="active1" src="https://blog.logomyway.com/wp-content/uploads/2021/02/gmail-logo.jpg" alt="">
+            </div>
+            <form action="">
+            <button style="position: absolute;top: 80px;" class="btn1"><img class="l1" src="https://icons-for-free.com/iconfiles/png/512/pencil-131965017493514588.png" alt="">Compose</button>
+            <button style="position: absolute;top: 200px;" class="btn"><img class="l"src="https://cdn4.vectorstock.com/i/1000x1000/31/78/photo-frame-icon-simple-style-vector-8633178.jpg"" alt="">Inbox</button>
+            <button style="position: absolute;top: 250px;" class="btn"><img class="l"src="https://png.pngtree.com/png-clipart/20190924/original/pngtree-vector-star-icon-png-image_4869138.jpg" alt="">Starred</button>
+            <button style="position: absolute;top: 300px;" class="btn"><img class="l"src="https://cdn.iconscout.com/icon/premium/png-512-thumb/snooze-5652740-4726420.png?f=avif&w=256" alt="">Snoozed</button>
+            <button style="position: absolute;top: 350px;" class="btn"><img class="l"src="https://cdn-icons-png.flaticon.com/512/2099/2099085.png" alt="">Sent</button>
+            <button style="position: absolute;top: 400px;" class="btn"><img class="l"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzf4JUfqcbRcKAZ2TO0gQn0xa6XlPppzfGw&usqp=CAU" alt="">Drafts</button>
+            <button style="position: absolute;top: 450px;" class="btn"><img class="l"src="https://icons-for-free.com/download-icon-more+icon-1320183327641553014_512.png" alt="">More</button>
+            <button style="position: absolute;top:500px ;" class="btn"><img class="l2"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/1200px-Plus_symbol.svg.png" alt="">Labels</button>
+              </form>
+               </div>
+
+     <div class="headermiddle ">
+        <div> <input class="btn2" type=" text" placeholder="Search Mail"></div>
+         <div class="img1"><img class="m1" src="https://www.iconpacks.net/icons/2/free-search-icon-3076-thumb.png" alt=""></div>
+         <div class="img2"><img class="m2" src="https://static.vecteezy.com/system/resources/previews/015/887/187/original/filter-search-option-icon-outline-style-vector.jpg" alt=""></div>
+         
+         <div><img class="m3" src="https://cdn2.iconfinder.com/data/icons/ui-ux-essencial-vol-2-2/16/check-box-empty-square-_unchecked-512.png" alt=""></div>
+         <div><img class="m4" src="https://cdn-icons-png.flaticon.com/512/61/61225.png" alt=""></div>
+          <div><img class="m5" src="https://cdn4.iconfinder.com/data/icons/app-custom-ui-1/48/Three_dots_upright-512.png" alt=""></div>
+         <div><img class="m0" src="https://icons-for-free.com/iconfiles/png/512/down+icon-1320166862644492688.png" alt=""></div>
+        
+         <div class="tag1"><a style="text-decoration: none; color:blueviolet;" href="">Primary</a></div><img class="mi1" src="https://cdn.icon-icons.com/icons2/1993/PNG/512/frame_gallery_image_images_photo_picture_pictures_icon_123209.png" alt="">
+         <div class="tag2"><a style="text-decoration: none; color: blueviolet;" href="">Social</a></div><img class="mi2" src="https://www.freeiconspng.com/thumbs/contact-icon-png/contacts-icon--26.png" alt="">
+         <div class="tag3"><a style="text-decoration: none; color: blueviolet;" href="">Promotion</a></div><img class="mi3" src="https://icon-library.com/images/promotion-icon-png/promotion-icon-png-2.jpg" alt="">
+         
+             <div class="maindiv">
+            
+                <div class="subdiv1">
+                <p style="font-size: 25px;">Hello gye's how are you today</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+
+                <div class="subdiv2">
+                <p>Hello gye's how are you today</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+
+                <div class="subdiv3">
+                <p>Hello gye's how are you today</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+
+                <div class="subdiv4">
+                <p>Hello gye's how are you today</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+
+                <div class="subdiv5">
+                <p>Hello gye's how are you today</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+
+                <div class="subdiv6">
+                <p>Hello gye's how are you today</p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                </div>
+             </div>
+
+             </div>
+        
+              
+      
+    <div class="headerright">
+       <div><img class="r1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/768px-Icon-round-Question_mark.svg.png" alt=""></div>
+       <div><img class="r2" src="https://cdn0.iconfinder.com/data/icons/e-commerce-207/1024/settings-512.png" alt=""></div>
+       <div><img class="r3" src="https://cdn3.iconfinder.com/data/icons/essentials-set-2/17/007-menu-512.png" alt=""></div>
+       <div><img class="r4" src="https://cdn1.iconfinder.com/data/icons/ui-next-2020-shopping-and-e-commerce-1/12/75_user-circle-512.png" alt=""></div>
+       
+    </div>
+    
+        </div>
+
+    <!-- main body end --> 
+</body>
+</html>

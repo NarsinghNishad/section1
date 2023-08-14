@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <style>
+    input{
+        width: 350px;
+        padding: 10px;
+        border: none;
+    position: absolute;
+    left: 190px;
+    top: 2px;
+    
+        box-sizing: border-box;
+        border-radius: 10px;
+
+    }
+.bt{
+    border: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    position: absolute;
+    right: 250px;
+    top: 3px;
+
+}
+.bt:hover{
+    border: 2px solid black;
+}
+.bt1{
+    position: absolute;
+    right: 120px;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+    top: 3px;
+}
+.bt1:hover{
+    background-color: blue;
+    color: white;
+}
+.bt2{
+    width: 100%;
+    
+    
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: white;
+    color: blue;
+}
+.bt2:hover{
+    background-color: blue;
+    color: white;
+}
+.btn{
+    width: 100%;
+}
+.same{
+    width: 100%;
+    border-radius: 10px;
+    text-align: justify;
+    border: none;
+}
+.same:hover{
+    background-color: aquamarine;
+    color: red;
+}
+.imgsame{
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+}
+.middle1{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+
+}
+.middle1:hover{
+    background-color: azure;
+
+}
+.middle2{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle2:hover{
+    background-color: azure;
+
+}
+.middle2a{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle2a:hover{
+    background-color: azure;
+
+}
+.imgsame1{
+    height: 300px;
+    overflow-x: hidden;
+    overflow: scroll;
+}
+
+.imgsame2{
+    width: 100%;
+    border-radius: 10px;
+    text-align: left;
+    border: none;
+}
+.imgsame2:hover{
+   
+    color: blue;
+}
+.imgsame3{
+    width: 25px;
+    height: 25px;
+    border: none;
+  
+}
+.imgsame3:hover{
+    background-color: whitesmoke;
+}
+.imgsame4{
+    width: 25px;
+    height: 25px;
+    border: none;
+
+}
+.imgsame4:hover{
+    background-color: whitesmoke;
+}
+.middle3{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle3:hover{
+    background-color: aquamarine;
+}
+.middle4{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle4:hover{
+    background-color: aquamarine;
+}
+.middle4a{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle4a:hover{
+    background-color: azure;
+
+}
+.middle5{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle5:hover{
+    background-color: aquamarine;
+}
+.middle6{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle6:hover{
+    background-color: aquamarine;
+}
+.middle6a{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle6a:hover{
+    background-color: azure;
+
+}
+.middle7{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle7:hover{
+    background-color: aquamarine;
+}
+.middle8{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle8:hover{
+    background-color: aquamarine;
+}
+.middle8a{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle8a:hover{
+    background-color: azure;
+
+}
+.middle9{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle9:hover{
+    background-color: aquamarine;
+}
+.middle10{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle10:hover{
+    background-color: aquamarine;
+}
+.middle10a{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle10a:hover{
+    background-color: azure;
+
+}
+.middle11{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle11:hover{
+    background-color: aquamarine;
+}
+.middle12{
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+}
+.middle12:hover{
+    background-color: aquamarine;
+}
+.middle12a{
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+}
+.middle12a:hover{
+    background-color: azure;
+
+}
+.right1{
+    background-color: white;
+    border: none;
+    text-align: left;
+}
+.right1:hover{
+    color: blue;
+}
+.right2{
+    background-color: white;
+    border: none;
+    text-align: left;
+}
+.right3{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+}
+.right3:hover{
+    color: blue;
+}
+.right4{
+    background-color:yellow ;
+    border: none;
+    text-align: left;
+    width: 50px;
+    border-radius: 5px;
+}
+.right5{
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    border: none;
+    text-align: left;
+}
+.right5:hover{
+    background-color: white;
+    color: blue;
+}
+</style>
+  <body class=" w-100 ">
+    <div style="" class="w-100 bg-danger ">
+        <img style="width: 60px;position: absolute;left: 120px;" src="https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png" alt="">
+    <input type="text" placeholder="Search...">
+    <button class="bt">Log in</button>
+    <button class="bt1">Create account</button>
+    </div><br><br>
+
+    <div class="container"><div class="row "> 
+       
+        <div class="col-sn-6 col-md-3 bg-body-secondary  " >
+          <div class="card bg-white m-2 p-1">  <h5>DEV Community is a community of 1,113,386 amazing developera</h5>
+            <p>We're a place where coders share, stay up-to-date and grow their careers</p>
+            <button class="bt2">Create account</button>
+            <button class="btn">Log in</button></div>
+         <div>
+            <div>
+<p><button class="same">🏡Home</button><br>
+    <button class="same">📖Reading List</button><br>
+    <button class="same">📃Listings</button><br>
+    <button class="same">🎙️Podcasts</button><br>
+    <button class="same">📽️Videos</button><br>
+    <button class="same">🏷️Tags</button><br>
+    <button class="same">💡FAQ</button><br>
+    <button class="same">🛍️Forem Shop</button><br>
+    <button class="same">❤️Advertise on DEV</button><br>
+    <button class="same"><img style="width: 15px;height: 16px;" src="data:image/png;base64,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" alt=""> About</button><br>
+    <button class="same">🤙Contact</button><br>
+    <button class="same">📖Guides</button><br>
+    <button class="same">🤔Software comparisons</button><br>
+    <h4>other</h4>
+    <button class="same">👍Code of Conduct</button><br>
+    <button class="same">😎Privacy Policy</button><br>
+    <button class="same">👀Terms of use</button><br>
+      </p>
+      <img class="imgsame" src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="">
+      <img class="imgsame " src="https://cdn-icons-png.flaticon.com/256/20/20673.png" alt="">
+      <img class="imgsame" src="https://cdn-icons-png.flaticon.com/512/38/38401.png" alt="">
+      <img class="imgsame" src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" alt="">
+      <img class="imgsame" src="https://cdn-icons-png.flaticon.com/512/1872/1872957.png" alt="">
+      <img class="imgsame" src="https://cdn.icon-icons.com/icons2/2622/PNG/512/brand_mastodon_icon_157886.png" alt="">
+      
+</div><br>
+   <div>
+      <h5>  Popular Tags</h5>
+<p class="imgsame1">
+<button class="imgsame2">#webdev</button><br> 
+<button class="imgsame2">#javascript</button><br>
+<button class="imgsame2">#programming</button><br>
+<button class="imgsame2">#tutorial</button><br>
+<button class="imgsame2">#react</button><br>
+<button class="imgsame2">#webdev</button><br>
+<button class="imgsame2">#beginners</button><br>
+<button class="imgsame2">#tutorial</button><br>
+<button class="imgsame2">#python</button><br>
+<button class="imgsame2">#devops</button><br>
+<button class="imgsame2">#productivity</button><br>
+<button class="imgsame2">#discuss</button><br>
+<button class="imgsame2">#career</button><br>
+<button class="imgsame2">#aws</button><br>
+<button class="imgsame2">#opensource</button><br>
+<button class="imgsame2">#css</button><br>
+<button class="imgsame2">#typescript</button><br>
+<button class="imgsame2">#node</button><br>
+<button class="imgsame2">#codenewbie</button><br>
+<button class="imgsame2">#testing</button><br>
+<button class="imgsame2">#api</button><br>
+<button class="imgsame2">#database</button><br>
+<button class="imgsame2">#news</button><br>
+<button class="imgsame2">#security</button><br>
+<button class="imgsame2">#android</button><br>
+<button class="imgsame2">#ai</button><br>
+<button class="imgsame2">#html</button><br>
+<button class="imgsame2">#learning</button><br>
+<button class="imgsame2">#github</button><br>
+<button class="imgsame2">#java</button><br>
+<button class="imgsame2">#php</button><br>
+<button class="imgsame2">#clou</button><br>
+</p>
+</div>
+   <div class="card bg-white ">
+    <p>DEV Community <button style="float: right; border: none;border-radius: 5px;"> <img class="imgsame3" src="https://www.svgrepo.com/show/124304/three-dots.svg" alt=""></button></p>
+    <div style="padding: 20px;">
+       <img style="border-radius: 10px;" class="w-100" src="https://res.cloudinary.com/practicaldev/image/fetch/s--GkDXbK0b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oky7tpxe4z0f8ksng5ta.png" alt="">
+       <h3>Life is too short to browse without</h3>
+       <h3><button style="color: blue; background-color: white;border: none;"><u>dark mode</u></button>.</h3>
+    </div>
+</div>
+    
+   <div class=" card bg-white mt-1" >
+    <p>DEV Community <button style="float: right; border: none;border-radius: 5px;"> <img class="imgsame4" src="https://www.svgrepo.com/show/124304/three-dots.svg" alt=""></button></p>
+     <div style="padding: 20px;" class="bg-white">
+        <img style="border-radius: 10px;" class="w-100" src="https://res.cloudinary.com/practicaldev/image/fetch/s--79-Nei9b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vgwfh7hesdncf0pv57j1.png" alt="">
+     </div>
+   </div><br>
+
+    <div>
+        <p><u style="color: blue;">DEV Community</u> A constructive and inclusive social network for software developers. With you every step of your journey</p><br>
+        <p>Built on <u style="color: blue;">Forem</u> — the <u style="color: blue;">open source </u>software that powers <u style="color: blue;">DEV</u> and other inclusive communities.</p><br>
+        <p>Made with love and <u style="color: blue;">Ruby on Rails</u>. DEV Community © 2016 - 2023.</p><br>
+    </div>
+         </div>  
+           
+           
+   </div>
+
+   <div class=" col-sn-6 col-md-6 bg-body-secondary ">
+    <button class="border-0 bg-body-tertiary"><b>Relevent</b></button>
+    <button class="border-0 bg-body-tertiary">Latest</button>
+    <button class="border-0 bg-body-tertiary">Top</button>
+       
+       <div class="card bg-white">
+           <img class="w-100" src="https://res.cloudinary.com/practicaldev/image/fetch/s--vsTDfqRZ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wyck78r593005hlbngyn.jpg" alt="">
+           <p>
+           <img style="width: 40px;height: 40px;margin-top: 25px;border-radius: 5px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--h1q5i4Pl--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/1/9a7650bd-c94f-4330-b5af-ef29fbec1a39.jpg" alt="">
+           Michael Tharrington for The DEV Team</p>
+           <h3 style="padding-left: 50px;">What was your win this week?</h3>
+             <div><button class="middle1">#discuss</button>
+           <button class="middle1">#weeklyretro</button></div>
+             <div class="mt-3"><button class="middle2">❤️❤️👍👍😍😍12 reaction</button>
+           <button class="middle2"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="">    46 comments</button>
+             <p style="float: right;">5 min read <button class="middle2a"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/128/3082/3082351.png" alt=""></button></p></div>
+        </div>
+        <div class="card bg-white mt-1">
+            <p>DEV cummunity</p>
+            <div style="padding: 30px; border-radius: 40px;">
+            <img style="border-radius: 10px;" class="w-100" src="https://res.cloudinary.com/practicaldev/image/fetch/s--wzgGMCLs--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_775/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qpdtjnt4fnuwag8noec8.png" alt="">
+            <h4>Need to stay up-to-date with the most relevant trends in software, such as generate AI, cloud computing, and all things frontend?</h4>
+            <p>Look no further.</p>
+            <p>You can do so much more once you <b>create your account</b>. Follow the devs and topics you care about, and keep up-to-date.</p>
+            <h4 style="color: blue;"><b><u>Start now</u></b></h4>
+            <p>Happy Coding ❤️</p>
+            </div>
+        </div>
+        <div class="card bg-white mt-1">
+            <p><img style="width: 40px;height: 40px;margin-top: 25px; border-radius: 20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--POeAtDbF--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1132933/80dc694e-3e7c-4e26-a083-a065ae27c0d4.png" alt="">
+                Brainiac </p>
+            <h3 style="padding-left: 50px;">Time Travel in React with Immer: A Step-by-Step Tutorial</h3>    
+               <div> <button class="middle3">#openbsd</button>
+            <button class="middle3">#httpd</button>
+            <button class="middle3">#web</button>
+            <button class="middle3">#server</button></div>
+              <div class="mt-3"> <button class="middle4">❤️👍2 reactiob</button>
+            <button class="middle4"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="">6 comments</button>
+              <p style="float: right;"> <button class="middle4a">5 min read<img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/128/3082/3082351.png" alt=""></button></p></div>
+        </div>
+       
+        <div class="card bg-white mt-1">
+            <p><img style="width: 40px;height: 40px;margin-top: 25px; border-radius: 20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--lKQ-kG9D--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1106749/71ade326-3930-4e11-96fb-8b3da05f1fd9.JPG" alt="">
+                Alan Jito</p>
+            <h3 style="padding-left: 50px;">Leveraging Amazon Bedrock for Advanced Generative AI Applications on AWS</h3>    
+               <div><button class="middle5">#aws</button>
+            <button class="middle5">#ai</button>
+            <button class="middle5">#bedrock</button>
+            <button class="middle5">#generativeai</button><br></div>
+                <div class="mt-3"><button class="middle6">❤️👍2 reactiob</button>
+            <button class="middle6"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="">6 comments</button>
+            <p style="float: right;"> <button class="middle6a">3 min read<img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/128/3082/3082351.png" alt=""></button></p></div>
+        </div>
+        
+        <div class="card bg-white mt-1">
+            <p><img style="width: 40px;height: 40px;margin-top: 25px; border-radius: 20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4jVFpfCq--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1128204/b114f9a5-d4e2-4589-a4d8-9e48ddb7f41c.png" alt="">
+                Conner Ow</p>
+            <h3 style="padding-left: 50px;">I used Node.js to OCR "Meme Monday" threads</h3>    
+               <div><button class="middle7">#javwscript</button>
+            <button class="middle7">#tutorial</button>
+            <button class="middle7">#programming</button>
+            <button class="middle7">#ai</button></div>
+              <div class="mt-3"><button class="middle8">❤️👍😍😍4 reactiob</button>
+            <button class="middle8"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="">12 comments</button>
+            <p style="float: right;"> <button class="middle8a">7 min read<img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/128/3082/3082351.png" alt=""></button></p></div>
+        </div>
+       
+        <div class="card bg-white mt-1">
+            <p><img style="width: 40px;height: 40px;margin-top: 25px; border-radius: 20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--vLtEb6fE--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/983923/f65b4dec-d2fc-4e11-b68e-251a12279040.jpeg" alt="">
+                Baivab Sarkar</p>
+            <h3 style="padding-left: 50px;">📸OpenCV🔮the Enchanted Palette 🎨✨Part: 2</h3>    
+              <div><button class="middle9">#python</button>
+            <button class="middle9">#github</button>
+            <button class="middle9">#opensource</button>
+            <button class="middle9">#opencv</button></div>
+             <div class="mt-3"><button class="middle10">❤️👍😍😍4 reactiob</button>
+            <button class="middle10"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="">10 comments</button>
+              <p style="float: right;"> <button class="middle10a">8 min read<img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/128/3082/3082351.png" alt=""></button></p></div>
+        </div>
+        
+        <div class="card bg-white mt-1">
+            <p><img style="width: 40px;height: 40px;margin-top: 25px; border-radius: 20px;" src="https://res.cloudinary.com/practicaldev/image/fetch/s--p1iewG1e--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/87972/a3543f5f-7054-4b0b-a2cd-7dea7ec97a2a.jpeg" alt="">
+                nabbisen</p>
+            <h3 style="padding-left: 50px;">OpenBSD httpd 7.3: Web サーバー</h3>    
+              <div><button class="middle9">#openbsd</button>
+            <button class="middle9">#httpd</button>
+            <button class="middle9">#web</button>
+            <button class="middle9">server</button></div>
+             <div class="mt-3"> <button class="middle10">❤️👍😍😍👍👍6 reactiob</button>
+            <button class="middle10"><img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="">17 comments</button>
+              <p style="float: right;" ><button class="middle10a">2 min read<img style="width: 20px; height: 20px;" src="https://cdn-icons-png.flaticon.com/128/3082/3082351.png" alt=""></button></p></div>
+        </div><br>
+</div>
+
+   <div class=" col-sn-6 col-md-3 bg-body-secondary " >
+    <div class="card bg-white m-2">
+        <h5>Listings <button style="color: blue; float:right;border: none; background-color: white;">see all</button></h5><hr>
+        <button class="right1">Learn React & Next.js and Boost Your Career 🚀</button>
+        <button class="right2">education</button><hr>
+        <button class="right1">IDURAR Open Source ERP / CRM Alternative to SalesForce</button>
+        <button class="right2">products</button><hr>
+        <button class="right1">Join the Godot Community and Contribute Today!</button>
+        <button class="right2">collabs</button><hr>
+        <button class="right1">SolveSum - Math Game for iOS and Android</button>
+        <button class="right2">products</button><hr>
+        <button class="right1">🌱 An Ultimate Hub for Developer Tools and Resources</button>
+        <button class="right2">products</button><hr>
+        <button style="color: blue; background-color: white; border: none;">Create a Listing</button>
+    </div>   
+       
+    <div class="card bg-white m-2 ">
+      <button class="right3"><b>#discuss</b></button><hr>
+      <button class="right1">How has AI changed your approach to development?</button>
+      <button class="right2">4 comments</button><hr>
+      <button class="right1">Which UI library for react or next are you using in your project?</button>
+      <button class="right4">New</button><hr>
+      <button class="right1">What you learning about this weekend?</button>
+      <button class="right2">12 comment</button><hr>
+      <button class="right1">Balancing Your Coding Act: Work-Life Harmony in Your Dream Job?</button>
+      <button class="right4">New</button><hr>
+      <button class="right1">73 berufliches Vorwärtskommen: Die Reise der IT-Fachkräfteschaft.</button>
+      <BUtton class="right4">New</BUtton><br>
+    </div> 
+    <div class="card bg-white m-2 ">
+       <button class="right3">#watercooler</button><hr>
+       <button class="right1">Meme Monday</button>
+       <button class="right2">25 comments</button><hr>
+       <button class="right1">Our favourite Spotify Playlist for Coding</button>
+       <button class="right2">111 comments</button><hr>
+       <button class="right1">Rubyist Hangout Thread</button>
+       <button class="right2">5 comments</button><hr>
+       <button class="right1">Come and geek out over synthesizers with me!</button>
+       <button class="right2">5 comments</button><hr>
+       <button class="right1">Music Monday — What are you listening to? (Music from Your Twenties Edition)</button>
+       <button class="right2">20 comments</button>
+    </div><br>  
+      <div>
+        <h5>trending guides/resources</h5><br>
+        <button class="right5">Why OpenAI removed Web Browsing from ChatGPT</button>
+        <button class="right5">Qwik – The Post-Modern Framework</button>
+        <button class="right5">Understanding JWTs: A Simple Guide for Beginners</button>
+
+      </div> 
+       
+    </div></div></div>
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
