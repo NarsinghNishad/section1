@@ -45,5 +45,7 @@
     
 //WAP to find all prime numbers in range of 1000-4000 using function
 
-const prime = 
+const prime = (num)=>{
+    
+}
 
